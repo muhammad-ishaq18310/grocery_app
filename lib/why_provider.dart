@@ -20,7 +20,7 @@ class _WhyProviderState extends State<WhyProvider> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("why statemengment "),
+        title: const Text("why statemengment "),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -29,7 +29,7 @@ class _WhyProviderState extends State<WhyProvider> {
             child: Center(
               child: Text(
                 counter.toString(),
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
             ),
           )
@@ -37,7 +37,7 @@ class _WhyProviderState extends State<WhyProvider> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

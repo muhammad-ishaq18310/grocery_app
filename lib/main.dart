@@ -8,6 +8,7 @@ import 'package:state_prctice/why_provider.dart';
 
 import 'screen/counter_example.dart';
 
+// this is my first project
 void main() {
   runApp(const MyApp());
 }
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: CounterExample(),
+          home: const CounterExample(),
         ));
   }
 }

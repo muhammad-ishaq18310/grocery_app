@@ -17,23 +17,23 @@ class _CounterExampleState extends State<CounterExample> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("counter example with provider"),
+        title: const Text("counter example with provider"),
       ),
       body: Center(
         child: Consumer<CountProvider>(builder: (context, value, child) {
           return Text(
             value.count.toString(),
-            style: TextStyle(fontSize: 25),
+            style: const TextStyle(fontSize: 25),
           );
         }),
       ),
       floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
+        shape: const CircleBorder(),
         backgroundColor: Colors.blue,
         onPressed: () {
           countProvider.setcount();
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

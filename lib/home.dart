@@ -10,7 +10,7 @@ class providerprctice extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("provider practice"),
+        title: const Text("provider practice"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +31,7 @@ class providerprctice extends StatelessWidget {
           x++;
           print(x);
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

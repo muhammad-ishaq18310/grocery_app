@@ -15,7 +15,7 @@ class _StatefulWigetState extends State<StatefulWiget> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("counter app "),
+        title: const Text("counter app "),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -24,7 +24,7 @@ class _StatefulWigetState extends State<StatefulWiget> {
             child: Center(
               child: Text(
                 "on taping the button the number will change $counter",
-                style: TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20),
               ),
             ),
           ),
@@ -34,33 +34,33 @@ class _StatefulWigetState extends State<StatefulWiget> {
               Container(
                 height: 20,
                 width: 20,
-                decoration:
-                    BoxDecoration(color: Colors.blue, shape: BoxShape.circle),
+                decoration: const BoxDecoration(
+                    color: Colors.blue, shape: BoxShape.circle),
               ),
               Container(
                 height: 20,
                 width: 20,
-                decoration:
-                    BoxDecoration(color: Colors.green, shape: BoxShape.circle),
+                decoration: const BoxDecoration(
+                    color: Colors.green, shape: BoxShape.circle),
               ),
               Container(
                 height: 20,
                 width: 20,
-                decoration:
-                    BoxDecoration(color: Colors.red, shape: BoxShape.circle),
+                decoration: const BoxDecoration(
+                    color: Colors.red, shape: BoxShape.circle),
               )
             ],
           )
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
+        shape: const CircleBorder(),
         onPressed: () {
           setState(() {
             counter++;
           });
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
